@@ -38,7 +38,7 @@ header{
     background-color: var(--background-color);
 }
 
-.personalization{
+body button{
     border-radius: 7em;
     border: solid var(--color-title);
     background-color: var(--background-color);
