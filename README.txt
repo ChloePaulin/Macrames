@@ -38,6 +38,9 @@ Page 1 : Accueil
     Les dernières créations :
         Découvrez dans cette rubrique les toutes dernières œuvres en macramé, fruit de la créativité et du savoir-faire de la créatrice. Chaque pièce, qu’il s’agisse de suspensions murales, d’attrapes-rêves, de porte-clés ou d’accessoires décoratifs, est entièrement réalisée à la main avec des matériaux soigneusement sélectionnés comme le coton, le bois flotté ou des éléments naturels. Vous y trouverez des créations uniques ou en petites séries, mêlant élégance et style bohème chic, parfaites pour sublimer votre intérieur ou offrir un cadeau original. Cette section est régulièrement mise à jour pour vous faire découvrir en avant-première les nouveautés et vous inspirer dans votre propre aventure créative.
 
+        Création 1 :
+            C'est ma première création et je souhaitais vous la présenter. C'est un mélange d'hésitation et de passion. Pouvoir aller au bout de cette oeuvre a été une réelle motivation pour mes autres créations.
+
     Qu'est-ce que le macramé ?
         Vous ne savez pas ce qu’est le macramé ? Pas de souci ! Voici une vidéo de [nom de l’auteur de la vidéo] qui explique clairement ce passe-temps.
 

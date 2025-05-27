@@ -23,6 +23,10 @@
     color:var(--color-title);
 }
 
+h1, h2, h3, h4, h5, h6, p{
+    padding: var(--spacing);
+}
+
 /* Header */
 #photo-creatrice{
     max-width: 30%;
@@ -47,3 +51,23 @@ body button{
 header>div{
     padding: var(--spacing);
 }
+
+/* Accueil - Section 1 - Dernières nouveautés */
+.card img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.carte{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-body-article{
+    background-color: var(--background-color);
+}
+
+.carte>div{
+    border: solid var(--color-title);
+}
+
