@@ -14,16 +14,11 @@
   </head>
   <body class="container">
     <!-- Barre de navigation -->
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="p-4">
-        <h5 class="text-body-emphasis"><a href=".">Accueil</a></h5>
-        <h5 class="text-body-emphasis"><a href="articles.html">Macramés</a></h5>
-        <h5 class="text-body-emphasis"><a href="contact.html">Contact</a></h5>
-      </div>
-    </div>
+
     <nav class="navbar">
       <div class="container-fluid">
         <img src="images/logo.PNG" alt="Aux macramés logo" />
+
         <button
           class="navbar-toggler"
           type="button"
@@ -35,6 +30,17 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="p-4">
+            <h6 class="text-body-emphasis link"><a href=".">Accueil</a></h6>
+            <h6 class="text-body-emphasis link">
+              <a href="articles.html">Macramés</a>
+            </h6>
+            <h6 class="text-body-emphasis link">
+              <a href="contact.html">Contact</a>
+            </h6>
+          </div>
+        </div>
       </div>
     </nav>
     <main>
@@ -55,7 +61,7 @@
           />
           <h2>Qui suis-je ?</h2>
         </div>
-        <div>
+        <p>
           Je m'appelle Divetty et je vous souhaite la bienvenue dans mon
           univers. Je suis une passionnée de macramé qui transforme chaque fil
           en une œuvre d’art unique. Cela fait maintenant deux ans que j'explore
@@ -63,11 +69,11 @@
           donner vie à des créations élégantes et authentiques.J'aimerais vous
           partager cette cette passion et vous faire découvrir la beauté du
           macramé à travers ses pièces originales.
-        </div>
+        </p>
       </header>
 
       <section>
-        <h2>Les dernières créations</h2>
+        <h2 id="dernieres_creations">Les dernières créations</h2>
         <p>
           Découvrez dans cette rubrique les toutes dernières œuvres en macramé,
           fruit de ma créativité et de mon savoir-faire. Chaque pièce, qu’il
@@ -84,44 +90,69 @@
         <!-- Cartes -->
 
         <div class="carte">
-          <div class="card" style="width: 15rem">
+          <div class="card" style="width: 18rem">
             <img
               src="images/photo2-macrame.jpg"
               class="card-img-top"
               alt="Dernière création"
             />
             <div class="card-body">
-              <h5 class="card-title">Dernière création</h5>
+              <h3 class="card-title">Dernière création</h3>
               <p class="card-text">
                 Dernière création en date. Un blanc pur pour un attrape-rêve
                 très efficace. N'attendez plus pour passer de bonnes nuit !
               </p>
             </div>
             <div class="card-body-article">
-              <a href="articles.html"><p>Voir cet article</p></a>
+              <a href="articles.html" class="link"><p>Voir cet article</p></a>
             </div>
           </div>
 
-          <div class="card" style="width: 15rem">
+          <div class="card" style="width: 18rem">
             <img
               src="images/photo3-macrame.jpg"
               class="card-img-top"
               alt="Avant dernière création"
             />
             <div class="card-body">
-              <h5 class="card-title">Avant dernière création</h5>
+              <h3 class="card-title">Avant dernière création</h3>
               <p class="card-text">
                 Dernière création en date. Un blanc pur pour un attrape-rêve
                 très efficace. N'attendez plus pour passer de bonnes nuit !
               </p>
             </div>
             <div class="card-body-article">
-              <a href="articles.html"><p>Voir cet article</p></a>
+              <a href="articles.html" class="link"><p>Voir cet article</p></a>
             </div>
           </div>
         </div>
         <!-- Fin cartes -->
       </section>
+
+      <section class="explication_macrame">
+        <h2 id="video_explicative">Qu'est-ce que le macramé ?</h2>
+
+        <p>
+          Vous ne savez pas ce qu’est le macramé ? Pas de souci ! Voici une
+          vidéo qui explique clairement ce passe-temps.
+        </p>
+
+        <video controls src="video/macrame-hd_1920_1080_25fps.mp4"></video>
+      </section>
+
+      <footer>
+        <div>
+          <a href="#"><p>Infos légales (CGV-CGU)</p></a>
+          <a href="#"><p>Protection des données</p></a>
+          <a href="#"><p>FAQ</p></a>
+        </div>
+        <div class="logos">
+          <!-- Facebook -->
+          <img src="images/facebook.svg" alt="Logo Facebook" />
+          <!-- Mail -->
+          <img src="images/mail.svg" alt="Logo Mail" />
+        </div>
+      </footer>
     </main>
     <!-- Scripts Javascript -->
     <script src="script.js"></script>

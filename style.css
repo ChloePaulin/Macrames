@@ -8,7 +8,7 @@
 }
 
 :root{
-    --spacing: 0.5em;
+    --spacing: 0.7em;
     --color-title: #BB774A;
     --background-color: rgba(217, 165, 106, 0.35);
     --color-text: black;
@@ -23,8 +23,9 @@
     color:var(--color-title);
 }
 
-h1, h2, h3, h4, h5, h6, p{
+body p{
     padding: var(--spacing);
+    margin: 0 0.7em;
 }
 
 /* Header */
@@ -34,8 +35,9 @@ h1, h2, h3, h4, h5, h6, p{
 
 .presentation{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    color: var(--color-title);
 }
 
 header{
@@ -60,7 +62,9 @@ header>div{
 
 .carte{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--spacing);
 }
 
 .card-body-article{
@@ -69,5 +73,49 @@ header>div{
 
 .carte>div{
     border: solid var(--color-title);
+    margin: var(--spacing);
+    max-height: 50%;
 }
 
+#dernieres_creations{
+    color: var(--color-title);
+    padding: var(--spacing); 
+}
+
+h3.card-title{
+    color: var(--color-title)
+}
+
+.link{
+    text-decoration: none;
+    color: var(--color-title);
+    font-weight: 600;
+}
+
+/* Accueil - Section 2 - Vidéo */
+
+#video_explicative{
+    color: var(--color-title);
+    padding-top: var(--spacing);
+}
+
+.explication_macrame{
+    background-color: var(--background-color);
+}
+
+video{
+    max-width: 95%;
+    padding-bottom: var(--spacing);
+}
+
+/* Footer */
+
+.logos{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.logos img{
+    width: 10%;
+}
