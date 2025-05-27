@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+}
+
+.container{
+    text-align: center;
+}
+
+:root{
+    --spacing: 1.5em;
+    --color-title: #BB774A;
+    --background-color: rgba(217, 165, 106, 0.35);
+    --color-text: black;
+}
+
+/* Titres et polices */
+.salutation_accueil{
+    color: var(--color-text);
+}
+
+.name_person{
+    color:var(--color-title);
+}
+
+/* Header */
+#photo-creatrice{
+    max-width: 20%;
+}
+
+.presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    background-color: var(--background-color);
+}
+
+.personalization{
+    border-radius: 7em;
+    border: solid var(--color-title);
+    background-color: var(--background-color);
+}
