@@ -91,73 +91,78 @@
         <p>N’attendez plus, écrivez-moi !</p>
       </section>
 
-      <section class="formulaire">
-        <div class="mb-3">
-          <input
-            type="text"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Ex : Dupont"
-            required
-          />
-        </div>
+      <section id="form">
+        <div class="formulaire">
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Ex : Dupont"
+              required
+            />
+          </div>
 
-        <div class="mb-3">
-          <input
-            type="text"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Ex : Sandra"
-            required
-          />
-        </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Ex : Sandra"
+              required
+            />
+          </div>
 
-        <div class="mb-3">
-          <input
-            type="tel"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Ex : 06 00 52 00 15"
-          />
-        </div>
+          <div class="mb-3">
+            <input
+              type="tel"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Ex : 06 00 52 00 15"
+            />
+          </div>
 
-        <div class="mb-3">
-          <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="name@example.com"
-            required
-          />
-        </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+              required
+            />
+          </div>
 
-        <div>
-        <select name="object" id="object-select" required>
-          <option value="" disabled>
-            --Sélectionnez l'objet de votre demande :--
-          </option>
-          <option value="acheter">Je souhaite passer commande</option>
-          <option value="renseignements">J'aimerais me renseigner</option>
-          <option value="autre">Autre</option>
-        </select>
-        </div>
+          <div class="object-selection">
+            <select name="object" id="object-select" required>
+              <option value="" selected disabled>
+                --Sélectionnez l'objet de votre demande :--
+              </option>
+              <option value="acheter">Je souhaite passer commande</option>
+              <option value="renseignements">J'aimerais me renseigner</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+          <br />
 
-        <div class="mb-3 autre">
-          <input
-            type="text"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Si autre, merci d'indiquer un objet"
-          />
-        </div>
+          <div class="mb-3 autre">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Précisez si autre (max: 15 caractères)"
+              size="15"
+            />
+          </div>
+          <br />
 
-        <div class="mb-3">
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-            placeholder="Tapez votre message ici"
-          ></textarea>
+          <div class="mb-3">
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              placeholder="Tapez votre message ici"
+            ></textarea>
+          </div>
         </div>
       </section>
 
@@ -185,7 +190,7 @@
           /></a>
         </div>
         <div>
-          <a href="articles.html"
+          <a href="contact.html"
             ><img
               id="retourhaut"
               src="images/arrow-up-circle-fill.svg"

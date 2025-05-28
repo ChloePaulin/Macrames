@@ -210,4 +210,18 @@ footer {
   .card-body-article{
     justify-content: flex-end;
   }
+
+  .formulaire{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .object-selection{
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .formulaire div{
+    padding: var(--spacing);
+  }
 }
