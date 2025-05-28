@@ -28,6 +28,16 @@ body p{
     margin: 0 0.7em;
 }
 
+/* Barre de navigation */
+
+.navbar{
+    background-color: #fff;
+}
+
+#navigate{
+    display: none;
+}
+
 /* Header */
 #photo-creatrice{
     max-width: 30%;
@@ -79,7 +89,7 @@ header>div{
 
 #dernieres_creations{
     color: var(--color-title);
-    padding: var(--spacing); 
+    padding-top: var(--spacing); 
 }
 
 h3.card-title{
@@ -110,12 +120,63 @@ video{
 
 /* Footer */
 
+.liens_footer{
+    padding: var(--spacing) 0;
+}
+
+.liens_footer p{
+    padding: 0.2em;
+}
+
 .logos{
     display: flex;
     justify-content: space-evenly;
-
 }
 
-.logos img{
-    width: 10%;
+.logos a img{
+    height: 2em;
+}
+
+#retourhaut{
+    width: 2rem;
+    opacity: 0.5;
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+}
+
+footer{
+    margin-bottom: var(--spacing);
+}
+
+@media screen and (min-width: 720px) {
+    .presentation{
+        display: inline;
+        padding-bottom: 0.2em;
+    }
+    #photo-creatrice{
+        padding-bottom: var(--spacing);
+    }
+    .carte{
+        flex-direction: row;
+    }
+    .explication_macrame{
+        display: flex;
+        align-items: center;
+        padding: var(--spacing);
+    }
+
+    #navigate{
+        display: flex;
+    }
+
+    #navigate li{
+        display: inline-block;
+        padding: var(--spacing);
+    }
+
+    .navbar-toggler{
+        display: none;
+    }
+
 }

@@ -15,34 +15,76 @@
   <body class="container">
     <!-- Barre de navigation -->
 
-    <nav class="navbar">
+    <nav class="navbar sticky-top">
       <div class="container-fluid">
         <img src="images/logo.PNG" alt="Aux macramés logo" />
 
+        <!-- Navigation Desktop -->
+          <div id="navigate">
+            <ul>
+              <li>
+                <a class="link active" aria-current="page" href="."
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a class="link" href="articles.html">Macramés</a>
+              </li>
+              <li>
+                <a class="link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Navigation Mobile -->
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarToggleExternalContent"
-          aria-controls="navbarToggleExternalContent"
-          aria-expanded="false"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="p-4">
-            <h6 class="text-body-emphasis link"><a href=".">Accueil</a></h6>
-            <h6 class="text-body-emphasis link">
-              <a href="articles.html">Macramés</a>
-            </h6>
-            <h6 class="text-body-emphasis link">
-              <a href="contact.html">Contact</a>
-            </h6>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Aux Macramés
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
           </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="."
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="articles.html">Macramés</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+
         </div>
       </div>
     </nav>
+
     <main>
       <header>
         <div>
@@ -72,7 +114,7 @@
         </p>
       </header>
 
-      <section>
+      <section class="article_macrames">
         <h2 id="dernieres_creations">Les dernières créations</h2>
         <p>
           Découvrez dans cette rubrique les toutes dernières œuvres en macramé,
@@ -90,7 +132,7 @@
         <!-- Cartes -->
 
         <div class="carte">
-          <div class="card" style="width: 18rem">
+          <div class="card">
             <img
               src="images/photo2-macrame.jpg"
               class="card-img-top"
@@ -104,11 +146,13 @@
               </p>
             </div>
             <div class="card-body-article">
-              <a href="articles.html" class="link"><p>Voir cet article</p></a>
+              <a href="articles.html" class="link"
+                ><p>Voir tous les articles</p></a
+              >
             </div>
           </div>
 
-          <div class="card" style="width: 18rem">
+          <div class="card">
             <img
               src="images/photo3-macrame.jpg"
               class="card-img-top"
@@ -122,7 +166,9 @@
               </p>
             </div>
             <div class="card-body-article">
-              <a href="articles.html" class="link"><p>Voir cet article</p></a>
+              <a href="articles.html" class="link"
+                ><p>Voir tous les articles</p></a
+              >
             </div>
           </div>
         </div>
@@ -130,27 +176,50 @@
       </section>
 
       <section class="explication_macrame">
-        <h2 id="video_explicative">Qu'est-ce que le macramé ?</h2>
+        <div class="flex_explication">
+          <h2 id="video_explicative">Qu'est-ce que le macramé ?</h2>
 
-        <p>
-          Vous ne savez pas ce qu’est le macramé ? Pas de souci ! Voici une
-          vidéo qui explique clairement ce passe-temps.
-        </p>
+          <p>
+            Vous ne savez pas ce qu’est le macramé ? Pas de souci ! Voici une
+            vidéo qui explique clairement ce passe-temps.
+          </p>
+        </div>
 
-        <video controls src="video/macrame-hd_1920_1080_25fps.mp4"></video>
+        <div>
+          <video controls src="video/macrame-hd_1920_1080_25fps.mp4"></video>
+        </div>
       </section>
 
       <footer>
-        <div>
-          <a href="#"><p>Infos légales (CGV-CGU)</p></a>
-          <a href="#"><p>Protection des données</p></a>
-          <a href="#"><p>FAQ</p></a>
+        <div class="liens_footer">
+          <a target="_blank" href="fichiers/CGV_CGU.pdf" class="link"
+            ><p>Infos légales (CGV-CGU)</p></a
+          >
+          <a
+            target="_blank"
+            href="fichiers/Politique_de_Protection_des_Donnees.pdf"
+            class="link"
+            ><p>Protection des données</p></a
+          >
+          <a target="_blank" href="fichiers/FAQ.pdf" class="link"><p>FAQ</p></a>
         </div>
         <div class="logos">
           <!-- Facebook -->
-          <img src="images/facebook.svg" alt="Logo Facebook" />
+          <a href="https://www.facebook.com/"
+            ><img src="images/facebook.svg" alt="Logo Facebook"
+          /></a>
           <!-- Mail -->
-          <img src="images/mail.svg" alt="Logo Mail" />
+          <a href="contact.html"
+            ><img src="images/mail.svg" alt="Logo Mail"
+          /></a>
+        </div>
+        <div>
+          <a href="."
+            ><img
+              id="retourhaut"
+              src="images/arrow-up-circle-fill.svg"
+              alt="Retour en haut"
+          /></a>
         </div>
       </footer>
     </main>
