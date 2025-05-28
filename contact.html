@@ -1,15 +1,211 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Me contacter - Aux Macramés</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil - Aux Macramés</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="container">
+    <!-- Barre de navigation -->
 
+    <nav class="navbar sticky-top">
+      <div class="container-fluid">
+        <img src="images/logo.PNG" alt="Aux macramés logo" />
 
+        <!-- Navigation Desktop -->
+        <div id="navigate">
+          <ul>
+            <li>
+              <a class="link active" aria-current="page" href=".">Accueil</a>
+            </li>
+            <li>
+              <a class="link" href="articles.html">Macramés</a>
+            </li>
+            <li>
+              <a class="link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Navigation Mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Aux Macramés
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="."
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="articles.html">Macramés</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <header>
+        <h1 id="h1color">Contact</h1>
+      </header>
+
+      <section>
+        <h2 id="h2color">Vous souhaitez plus d'informations ?</h2>
+        <p>N’attendez plus, écrivez-moi !</p>
+      </section>
+
+      <section class="formulaire">
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Ex : Dupont"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Ex : Sandra"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <input
+            type="tel"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Ex : 06 00 52 00 15"
+          />
+        </div>
+
+        <div class="mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+            required
+          />
+        </div>
+
+        <div>
+        <select name="object" id="object-select" required>
+          <option value="" disabled>
+            --Sélectionnez l'objet de votre demande :--
+          </option>
+          <option value="acheter">Je souhaite passer commande</option>
+          <option value="renseignements">J'aimerais me renseigner</option>
+          <option value="autre">Autre</option>
+        </select>
+        </div>
+
+        <div class="mb-3 autre">
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Si autre, merci d'indiquer un objet"
+          />
+        </div>
+
+        <div class="mb-3">
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            placeholder="Tapez votre message ici"
+          ></textarea>
+        </div>
+      </section>
+
+      <footer>
+        <div class="liens_footer">
+          <a target="_blank" href="fichiers/CGV_CGU.pdf" class="link"
+            ><p>Infos légales (CGV-CGU)</p></a
+          >
+          <a
+            target="_blank"
+            href="fichiers/Politique_de_Protection_des_Donnees.pdf"
+            class="link"
+            ><p>Protection des données</p></a
+          >
+          <a target="_blank" href="fichiers/FAQ.pdf" class="link"><p>FAQ</p></a>
+        </div>
+        <div class="logos">
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/"
+            ><img src="images/facebook.svg" alt="Logo Facebook"
+          /></a>
+          <!-- Mail -->
+          <a href="contact.html"
+            ><img src="images/mail.svg" alt="Logo Mail"
+          /></a>
+        </div>
+        <div>
+          <a href="articles.html"
+            ><img
+              id="retourhaut"
+              src="images/arrow-up-circle-fill.svg"
+              alt="Retour en haut"
+          /></a>
+        </div>
+      </footer>
+    </main>
+    <!-- Scripts Javascript -->
     <script src="script.js"></script>
-</body>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+      integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
