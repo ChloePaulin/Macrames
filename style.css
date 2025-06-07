@@ -28,6 +28,10 @@ body p {
   margin: 0 0.7em;
 }
 
+section{
+  margin: var(--spacing)
+}
+
 /* Barre de navigation */
 
 .navbar {
@@ -65,6 +69,7 @@ header > div {
 }
 
 /* Accueil - Section 1 - Dernières nouveautés */
+
 .card img {
   max-width: 100%;
   object-fit: cover;
@@ -84,7 +89,7 @@ header > div {
 .carte > div {
   border: solid var(--color-title);
   margin: var(--spacing);
-  max-height: 50%;
+  /* max-height: 50%; */
 }
 
 #dernieres_creations {
@@ -111,11 +116,13 @@ h3.card-title {
 
 .explication_macrame {
   background-color: var(--background-color);
+  padding: var(--spacing);
 }
 
 video {
   max-width: 95%;
   padding-bottom: var(--spacing);
+  padding-top: var(--spacing);
 }
 
 /* Footer */
@@ -160,12 +167,20 @@ footer {
   font-weight: 500;
 }
 
-
 /* Page Contact */
 
-#h2color{
+#h2color {
   color: var(--color-title);
   font-weight: 500;
+}
+.autre{
+  display: none;
+}
+
+@media screen and (min-width: 720px) and (max-width: 768px) {
+  .card-text{
+    font-size: 0.8em;
+  }
 }
 
 @media screen and (min-width: 720px) {
@@ -177,12 +192,16 @@ footer {
     padding-bottom: var(--spacing);
   }
   .carte {
-    flex-direction: row;
+    display: flex;
+  }
+
+  .informations-card{
+    display: flex;
+    flex-direction: column;
   }
   .explication_macrame {
     display: flex;
     align-items: center;
-    padding: var(--spacing);
   }
 
   #navigate {
@@ -198,30 +217,38 @@ footer {
     display: none;
   }
 
-  .carte {
-    display: inline;
-  }
-
   .card-contenu {
     display: flex;
     flex-direction: row;
   }
 
-  .card-body-article{
+  .card-body{
+    align-content: center;
+  }
+
+  .card-body-article {
     justify-content: flex-end;
   }
 
-  .formulaire{
+  .formulaire {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  .object-selection{
-    display: flex;
-    justify-content: flex-start;
+  .object-selection {
+    grid-column: 1/3;
   }
-  
-  .formulaire div{
+
+  .autre{
+    grid-column-start: 1;
+  }
+
+  .formulaire div {
     padding: var(--spacing);
+  }
+
+  #textarea{
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 }
